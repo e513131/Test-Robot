@@ -44,7 +44,8 @@ public class RobotMap {
 	public static Servo rightServo = new Servo(9);
 	public static Servo leftServo = new Servo(10);
 	
-		
+	public static WPI_TalonSRX shooterAngle = new WPI_TalonSRX(11);
+	
 	public static AnalogGyro gyro = new AnalogGyro(0);
 	
 

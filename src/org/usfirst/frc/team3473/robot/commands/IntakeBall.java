@@ -1,6 +1,5 @@
 package org.usfirst.frc.team3473.robot.commands;
 
-import org.usfirst.frc.team3473.robot.OI;
 import org.usfirst.frc.team3473.robot.Robot;
 
 import edu.wpi.first.wpilibj.command.Command;
@@ -17,12 +16,15 @@ public class IntakeBall extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	Robot.shooter.setServoAngle(0);
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+    	Robot.shooter.setShooterAngle(-0.5);
     	Robot.intake.setIntakeSpeed(0.75);
     	Robot.shooter.setIntakeSpeed(0.5);
+
     	
     }
 

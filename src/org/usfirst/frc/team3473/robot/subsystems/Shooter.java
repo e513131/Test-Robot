@@ -26,5 +26,15 @@ public class Shooter extends Subsystem {
     	RobotMap.shootingWheelsL.set(-intakeSpeed);
     	RobotMap.shootingWheelsR.set(intakeSpeed);
     }
+    
+    public void setShooterAngle(double speed) {
+    	RobotMap.shooterAngle.set(speed);
+    }
+    
+    public void setServoAngle(int angle) {
+    	RobotMap.leftServo.setAngle(angle);
+    	RobotMap.leftServo.setAngle(angle);
+    }
+    
 }
 

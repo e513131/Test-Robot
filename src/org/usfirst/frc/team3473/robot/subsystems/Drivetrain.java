@@ -26,7 +26,7 @@ public class Drivetrain extends Subsystem {
     public void setRight(double speed) {
     	RobotMap.backRight.set(-speed);
     	RobotMap.topRight.set(-speed);
-    	RobotMap.backRight.set(-speed);
+    	RobotMap.middleRight.set(-speed);
     }
     
 }

@@ -9,8 +9,8 @@ package org.usfirst.frc.team3473.robot;
 
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
-import edu.wpi.first.wpilibj.ADXRS450_Gyro;
 import edu.wpi.first.wpilibj.AnalogGyro;
+import edu.wpi.first.wpilibj.Servo;
 
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
@@ -30,7 +30,7 @@ public class RobotMap {
 	// public static int rangefinderModule = 1;
 	 
 	public static WPI_TalonSRX topRight = new WPI_TalonSRX(0);
-	public static WPI_TalonSRX middleRIght = new WPI_TalonSRX(1);
+	public static WPI_TalonSRX middleRight = new WPI_TalonSRX(1);
 	public static WPI_TalonSRX backRight = new WPI_TalonSRX(2);
 	public static WPI_TalonSRX topLeft = new WPI_TalonSRX(3);
 	public static WPI_TalonSRX middleLeft = new WPI_TalonSRX(4);
@@ -40,6 +40,10 @@ public class RobotMap {
 	public static WPI_TalonSRX shootingWheelsR = new WPI_TalonSRX(7);
 
 	public static WPI_TalonSRX intakeSpin = new WPI_TalonSRX(8);
+	
+	public static Servo rightServo = new Servo(9);
+	public static Servo leftServo = new Servo(10);
+	
 		
 	public static AnalogGyro gyro = new AnalogGyro(0);
 	

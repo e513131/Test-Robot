@@ -46,8 +46,11 @@ public class OI {
 	
 	public static Joystick leftJoystick = new Joystick(0);
 	public static Joystick rightJoystick = new Joystick(1);
-	public static Button shootingButton = new JoystickButton(leftJoystick, 0);
-	public static Button intakeButton = new JoystickButton(rightJoystick, 0);
-	
+	public static Button shootingButton = new JoystickButton(rightJoystick, 1);
+	public static Button intakeButton = new JoystickButton(leftJoystick, 1);
+	public static Button outtakeButton = new JoystickButton(leftJoystick, 4);
+	public static Button loweringButton = new JoystickButton(rightJoystick, 2);
+	public static Button raisingButton = new JoystickButton(rightJoystick, 3);
+
 	
 }

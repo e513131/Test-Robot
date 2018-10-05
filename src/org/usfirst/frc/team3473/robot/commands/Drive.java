@@ -24,8 +24,8 @@ public class Drive extends Command {
     	double leftSpeed = -OI.leftJoystick.getY();
     	double rightSpeed = -OI.rightJoystick.getY();
     	
-    	Robot.drivetrain.setLeft(leftSpeed);
-    	Robot.drivetrain.setRight(rightSpeed);
+    	Robot.drivetrain.setLeft(leftSpeed/2);
+    	Robot.drivetrain.setRight(rightSpeed/2);
     	
     }
 

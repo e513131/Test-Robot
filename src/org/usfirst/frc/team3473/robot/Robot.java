@@ -38,7 +38,7 @@ public class Robot extends TimedRobot {
 	public static Drivetrain drivetrain = new Drivetrain();
 	public Drive drive = new Drive();
 	public static Shooter shooter = new Shooter();
-	public static ShootBall shootBall = new ShootBall();
+	public ShootBall shootBall = new ShootBall(1000);
 	public static Intake intake = new Intake();
 	public IntakeBall intakeBall = new IntakeBall();
 	
@@ -51,6 +51,7 @@ public class Robot extends TimedRobot {
 	 */
 	@Override
 	public void robotInit() {
+		
 		m_oi = new OI();
 		m_chooser.addDefault("Default Auto", new ExampleCommand());
 		// chooser.addObject("My Auto", new MyAutoCommand());
@@ -110,6 +111,8 @@ public class Robot extends TimedRobot {
 		// continue until interrupted by another command, remove
 		// this line or comment it out.
 		drive.start();
+		shootBall.start();
+		intakeBall.start();
 	}
 
 	/**

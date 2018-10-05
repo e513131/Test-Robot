@@ -29,24 +29,22 @@ public class RobotMap {
 	// public static int rangefinderPort = 1;
 	// public static int rangefinderModule = 1;
 	 
-	public static WPI_TalonSRX topRight = new WPI_TalonSRX(0);
-	public static WPI_TalonSRX middleRight = new WPI_TalonSRX(1);
-	public static WPI_TalonSRX backRight = new WPI_TalonSRX(2);
-	public static WPI_TalonSRX topLeft = new WPI_TalonSRX(3);
-	public static WPI_TalonSRX middleLeft = new WPI_TalonSRX(4);
-	public static WPI_TalonSRX backLeft = new WPI_TalonSRX(5);
+	public static WPI_TalonSRX topRight = new WPI_TalonSRX(3);
+	public static WPI_TalonSRX middleRight = new WPI_TalonSRX(8);
+	public static WPI_TalonSRX backRight = new WPI_TalonSRX(0);
+	public static WPI_TalonSRX topLeft = new WPI_TalonSRX(10);
+	public static WPI_TalonSRX middleLeft = new WPI_TalonSRX(1);
+	public static WPI_TalonSRX backLeft = new WPI_TalonSRX(4);
 	
-	public static WPI_TalonSRX shootingWheelsL = new WPI_TalonSRX(6);
-	public static WPI_TalonSRX shootingWheelsR = new WPI_TalonSRX(7);
+	public static WPI_TalonSRX shootingWheelsL = new WPI_TalonSRX(11);
+	public static WPI_TalonSRX shootingWheelsR = new WPI_TalonSRX(6);
 
-	public static WPI_TalonSRX intakeSpin = new WPI_TalonSRX(8);
+	public static WPI_TalonSRX intakeSpin = new WPI_TalonSRX(2);
 	
-	public static Servo rightServo = new Servo(9);
-	public static Servo leftServo = new Servo(10);
+	public static Servo rightServo = new Servo(1);
+	public static Servo leftServo = new Servo(0);
 	
-	public static WPI_TalonSRX shooterAngle = new WPI_TalonSRX(11);
+	public static WPI_TalonSRX shooterAngle = new WPI_TalonSRX(5);
 	
 	public static AnalogGyro gyro = new AnalogGyro(0);
-	
-
 }

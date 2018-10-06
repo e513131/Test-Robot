@@ -38,7 +38,7 @@ public class Robot extends TimedRobot {
 	public static Drivetrain drivetrain = new Drivetrain();
 	public Drive drive = new Drive();
 	public static Shooter shooter = new Shooter();
-	public ShootBall shootBall = new ShootBall(1000);
+	public ShootBall shootBall = new ShootBall();
 	public static Intake intake = new Intake();
 	public IntakeBall intakeBall = new IntakeBall();
 	
